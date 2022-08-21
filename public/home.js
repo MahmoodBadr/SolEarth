@@ -16,7 +16,7 @@ async function getAddress() {
 
     if (json.wattData > 1600) {
         document.getElementById("assesment").innerHTML = "Great! You should install solar panels, it will help the earth! ☀️"
-    } else if (json.wattData <= 1600 || json.wattData >= 1200) {
+    } else if (json.wattData <= 1600 && json.wattData >= 1200) {
         document.getElementById("assesment").innerHTML = "OK. It won't hurt to install solar panels! ⛅"
     } else {
         document.getElementById("assesment").innerHTML = "Bad. It will not be eco-friendly to use solar power for your area. 🌧️"
